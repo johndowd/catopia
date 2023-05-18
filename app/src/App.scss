@@ -1,3 +1,6 @@
+$primary-yellow: #EDC53B;
+$secondary-blue: #4B4ADA;
+
 .App {
   text-align: center;
 }
@@ -14,7 +17,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #FFFFFF;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,6 +26,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
 
 .App-link {
   color: #61dafb;
@@ -35,4 +39,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navbar {
+  background-color: $primary-yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
 }
