@@ -17,7 +17,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import { ShoppingCart } from '@mui/icons-material';
 
-const smLogo = require('../assets/images/catopia_small.png');
+const smLogo = require('../../assets/images/catopia_small.png');
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
