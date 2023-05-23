@@ -15,6 +15,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
+import { ShoppingCart } from '@mui/icons-material';
 
 const smLogo = require('../assets/images/catopia_small.png');
 
@@ -189,18 +190,10 @@ export default function PrimarySearchAppBar() {
           </Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-              <Badge badgeContent={4} color="error">
-                <MailIcon />
-              </Badge>
-            </IconButton>
-            <IconButton
-              size="large"
-              aria-label="show 17 new notifications"
-              color="inherit"
-            >
-              <Badge badgeContent={17} color="error">
-                <NotificationsIcon />
+            <IconButton size="large" aria-label="go to shopping cart" color="inherit">
+              <Badge color="error">
+                <Typography variant="h5" noWrap component="div"> cart &nbsp;</Typography>
+                <ShoppingCart />
               </Badge>
             </IconButton>
             <IconButton
@@ -212,6 +205,7 @@ export default function PrimarySearchAppBar() {
               onClick={handleProfileMenuOpen}
               color="inherit"
             >
+              <Typography variant="h5" noWrap component="div"> account &nbsp;</Typography>
               <AccountCircle />
             </IconButton>
           </Box>
