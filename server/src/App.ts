@@ -1,5 +1,7 @@
 import express, { Request, Response } from 'express';
 
+import routes from './routes/routes';
+
 class App {
   public server: express.Application;
 
@@ -14,9 +16,7 @@ class App {
   }
 
   private routes(): void {
-    this.server.get('/', (req: Request, res: Response) => {
-      res.send('Hello, World!');
-    });
+    this.server.use(routes)
   }
 
   public start(port: number): void {
