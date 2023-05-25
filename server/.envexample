@@ -1,0 +1,12 @@
+# Environment variables.
+STATUS=production
+#Server port
+SERVER_PORT=8080
+
+
+#DB CONFIG
+HOST=db.host
+USER=root
+PASSWORD=db.password
+DB=db.name
+DIALECT=mysql
