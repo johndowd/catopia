@@ -10,17 +10,21 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
-const fs_1 = require("fs");
-const dataPath = './data/data.json';
+const userData = {
+    users: [
+        {
+            id: 1,
+            email: 'jd831',
+        }
+    ]
+};
 const routes = (0, express_1.Router)();
 routes.get('/', (req, res) => {
     return res.json({ message: 'API endpoint working' });
 });
 routes.get('/users', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const json = (0, fs_1.readFile)(dataPath, 'utf8', (err, data) => {
-        console.log(data, err);
-    });
-    return res.json({ json });
+    const users = JSON.stringify(userData.users);
+    return res.json({ users });
 }));
 exports.default = routes;
 //# sourceMappingURL=routes.js.map
