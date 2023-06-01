@@ -48,7 +48,8 @@ export default function Home() {
     <Box 
       sx={{ 
         flexGrow: 1,
-        margin: 2,
+        margin: 'auto',
+        'max-width': 1440,
     }}>
       <Grid container spacing={2}>
         <Grid item xs={12}>
